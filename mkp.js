@@ -1,4 +1,4 @@
-const GITHUB_RAW_URL = 'VOTRE_URL_BRUTE_GITHUB'; // Paste your Raw URL here
+const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/fgachelin/markplus/refs/heads/main/grammar.json'; // Paste your Raw URL here
 
 async function readGitHubJson(url) {
   try {
