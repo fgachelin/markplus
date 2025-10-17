@@ -13,8 +13,10 @@ async function readGitHubJson(url) {
     // 2. Parse the JSON response into a JavaScript object
     const data = await response.json();
 
-    console.log("Données JSON lues depuis GitHub:", data);
-    return data;
+    var d = document.createElement("p");
+    d.innerHTML = "Données JSON lues depuis GitHub:" + JSON.stringify(data);
+    document.body.appendChild(d);
+    return;
     
   } catch (error) {
     console.error("Échec de la lecture du fichier JSON:", error);
